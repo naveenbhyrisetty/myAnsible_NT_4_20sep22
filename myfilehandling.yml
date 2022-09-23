@@ -1,9 +1,8 @@
 --- 
-- hosts: 172:31.2.18
+- hosts: 172.31.2.18
   become: yes 
   tasks: 
   - name: create a file
     file: 
       path: /home/ubuntu 
       state: touch 
-      
