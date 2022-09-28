@@ -3,5 +3,5 @@
   user: 
      name: tomcat 
      home: /opt/tomcat
-     shell: bin/false 
+     shell: /bin/false 
      state: present 
