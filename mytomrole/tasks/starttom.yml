@@ -3,4 +3,5 @@
   systemd: 
     state: started 
     daemon_reload: yes 
-    name: tomcate 
+    enabled: yes
+    name: tomcat

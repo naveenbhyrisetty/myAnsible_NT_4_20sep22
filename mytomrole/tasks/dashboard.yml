@@ -1,12 +1,12 @@
 --- 
 - name: copy tomcatUser.xml into node side 
   template: 
-      scr: templates/mytomuser.j2
+      src: templates/mytomuser.j2
       dest: /opt/tomcat/conf/tomcat-users.xml 
 
 - name: copy context file into node side 
   template: 
-      scr: templates/mytomcontext.j2 
+      src: templates/mytomcontext.j2 
       dest: /opt/tomcat/webapps/manager/META-INF/context.xml      
 
 - name: copy host context file into node side 
@@ -16,5 +16,5 @@
 
 - name: copy tomcat service file into node side 
   template: 
-      scr: templates/mytomservice.j2
+      src: templates/mytomservice.j2
       dest: /etc/systemd/system/tomcat.service        
